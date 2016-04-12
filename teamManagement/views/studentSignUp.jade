@@ -1,0 +1,29 @@
+doctype html
+head
+    script(src="//code.jquery.com/jquery-1.12.0.min.js")
+    script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(src="https://cdn.firebase.com/js/client/2.4.1/firebase.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    script(src="../scripts/jquery-ui/external/jquery/jquery.js")
+    script(src="../scripts/jquery-ui/jquery-ui.js")
+body
+    h1.text-center Practice Sign Up
+        a(href="../index.html").btn.btn-default HOME
+    .container
+        h3.text-center Sign Up for Practice
+        #signUp
+            .col-md-3
+            .col-md-6
+                .row
+                    .col-md-6
+                        label Student Name
+                        select.form-control#studentName
+                            option Select Your Name
+                    .col-md-6
+                        label Practice Date
+                        input(type="date", placeholder="start date mm-dd-yy")#practiceDate.form-control
+                br
+                .row
+                    button.btn.btn-success.form-control#submit Sign Up for Practice
+            .col-md-3
+    script(src="../scripts/studentSignUp.js")

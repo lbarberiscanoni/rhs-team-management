@@ -1,0 +1,22 @@
+doctype html
+head
+    script(src="//code.jquery.com/jquery-1.12.0.min.js")
+    script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(src="https://cdn.firebase.com/js/client/2.4.1/firebase.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    script(src="../scripts/jquery-ui/external/jquery/jquery.js")
+    script(src="../scripts/jquery-ui/jquery-ui.js")
+body
+    h1.text-center Practice Schedule
+        a(href="../index.html").btn.btn-default HOME
+    .container
+        .col-md-1
+        .col-md-4
+            h3.text-center To Sort
+            #toSort
+        .col-md-2
+        .col-md-4
+            h3.text-center Sorted
+            #sorted
+        .col-md-1
+    script(src="../scripts/practiceSchedule.js")

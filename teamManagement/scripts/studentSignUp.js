@@ -13,8 +13,11 @@ $(document).ready(function() {
         var practiceDate = $("#practiceDate").val();
         practiceSchedule.push({
             name: studentName,
+            title: studentName,
             practiceDate: practiceDate,
             coach: "",
+            start: practiceDate,
+            end: practiceDate,
         });
     });
 });

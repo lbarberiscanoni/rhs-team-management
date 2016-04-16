@@ -1,4 +1,5 @@
 var allData = new Firebase("https://rhs-team.firebaseio.com/practiceSchedule");
+var listOfCoaches = new Firebase("https://rhs-team.firebaseio.com/coaches");
 
 $(document).ready(function() {
 
@@ -54,6 +55,10 @@ $(document).ready(function() {
         window.allBookings = Object.keys(val).map(function(key) { return val[key] });
     });
 
+    listOfCoaches.on("child_added", function(snapshot) {
+        var coach = snapshot.val();
+        $("#houseName").append("<option>" + coach.name + "</option>");
+    });
     $("#houseName").change(function() {
         var houseSelected = $("#houseName").val();
         var guestList = window.allBookings.filter(function(a) { return a.coach === houseSelected; });

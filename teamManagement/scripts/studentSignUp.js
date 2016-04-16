@@ -19,5 +19,8 @@ $(document).ready(function() {
             start: practiceDate,
             end: practiceDate,
         });
+
+        alert(studentName + " just signed up for practice");
+        window.location.reload();
     });
 });
